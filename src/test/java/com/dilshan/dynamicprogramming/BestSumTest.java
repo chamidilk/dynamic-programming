@@ -1,11 +1,10 @@
 package com.dilshan.dynamicprogramming;
 
 import static org.assertj.core.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
-
 
 
 class BestSumTest {
@@ -15,7 +14,7 @@ class BestSumTest {
 
         // given
         int targetSum = 100;
-        int[] numbers = new int[]{5,3,100};
+        int[] numbers = new int[]{5, 3, 100};
 
         // when
         List<Integer> result = BestSum.sum(targetSum, numbers, new HashMap<>());
@@ -31,13 +30,12 @@ class BestSumTest {
 
         // given
         int targetSum = 0;
-        int[] numbers = new int[]{5,3,100};
+        int[] numbers = new int[]{5, 3, 100};
 
         // when
         List<Integer> result = BestSum.sum(targetSum, numbers, new HashMap<>());
 
         // then
-        List<Integer> expected = new ArrayList<>();
         assertThat(result).isEmpty();
     }
 
@@ -46,13 +44,12 @@ class BestSumTest {
 
         // given
         int targetSum = 17;
-        int[] numbers = new int[]{5,100};
+        int[] numbers = new int[]{5, 100};
 
         // when
         List<Integer> result = BestSum.sum(targetSum, numbers, new HashMap<>());
 
         // then
-        List<Integer> expected = new ArrayList<>();
         assertThat(result).isNull();
     }
 }

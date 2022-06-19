@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class HowSum {
     public static void main(String[] args) {
-        System.out.println(sum(7, new int[]{5,3,4,7}, new HashMap<>()));
+        System.out.println(sum(7, new int[]{5, 3, 4, 7}, new HashMap<>()));
         System.out.println(sum(300, new int[]{2}, new HashMap<>()));
     }
 

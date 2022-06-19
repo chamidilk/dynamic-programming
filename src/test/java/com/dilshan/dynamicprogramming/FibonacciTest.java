@@ -11,7 +11,7 @@ public class FibonacciTest {
 //    private final Fibonacci fibonacci = new Fibonacci();
 
     @Test
-    public void testFibonacci50(){
+    public void testFibonacci50() {
         // given
         int n = 50;
 
@@ -23,7 +23,7 @@ public class FibonacciTest {
     }
 
     @Test
-    public void testFibonacci10(){
+    public void testFibonacci10() {
         // given
         int n = 10;
 
